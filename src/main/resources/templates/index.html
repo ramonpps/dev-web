@@ -141,13 +141,22 @@
     <div class="newsletter">
         <h2>Assine nossa Newsletter</h2>
         <p>Receba ofertas exclusivas e novidades diretamente no seu e-mail.</p>
-        <form action="/subscribe" method="post" style="max-width: 500px; margin: auto;">
+        <form id="newsletterForm" action="/subscribe" method="post" style="max-width: 500px; margin: auto;">
             <div class="input-group mb-3">
                 <input type="email" class="form-control" name="email" placeholder="Seu e-mail" aria-label="Seu e-mail" required>
                 <button class="btn btn-danger" type="submit">Assinar</button>
             </div>
         </form>
     </div>
+    
+    <script>
+        document.getElementById("newsletterForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Inscrição realizada com sucesso!");
+            window.location.href = "/";
+        });
+    </script>
+    
     
 
 </center>
