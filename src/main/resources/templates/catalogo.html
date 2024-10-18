@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #8B4513;">
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="/"><strong>Início</strong></a></li>
+            <li class="nav-item"><a class="nav-link" href="/catalogo"><strong>Catálogo</strong></a></li>
+            <li class="nav-item"><a class="nav-link" href="/sobre"><strong>Sobre</strong></a></li>
+            <li class="nav-item"><a class="nav-link" href="/contato"><strong>Contato</strong></a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                    <strong>Categorias</strong>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><strong>Vinhos Tintos</strong></a></li>
+                    <li><a class="dropdown-item" href="#"><strong>Vinhos Brancos</strong></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<center>
+    <div class="item-box">
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/catalogo/pergola_tinto.jpg" class="card-img-top" alt="pergola_tinto">
+                        <div class="card-body">
+                            <h5 class="card-title">Pérgola tinto</h5>
+                            <p class="card-text">O coringa dos vinhos, todo mundo gosta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/catalogo/dom_bosco_tinto.png" class="card-img-top" alt="dom_bosco_tinto">
+                        <div class="card-body">
+                            <h5 class="card-title">Dom Bosco Tinto</h5>
+                            <p class="card-text">Quando não tem pérgola, esse serve.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/catalogo/casa_del_puerto_branco.png" class="card-img-top" alt="casa_del_puerto_branco">
+                        <div class="card-body">
+                            <h5 class="card-title">Casa del Puerto Branco</h5>
+                            <p class="card-text">Só pra macho.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
+
+
+<footer class="footer mt-auto py-3" style="background-color: #8B4513; color: white;">
+    <div class="container text-center">
+        <span>&copy; 2023 Adega do Ramon. Todos os direitos reservados.</span>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="/termos" style="color: white;">Termos de Uso</a></li>
+            <li class="list-inline-item"><a href="/privacidade" style="color: white;">Política de Privacidade</a></li>
+            <li class="list-inline-item"><a href="/contato" style="color: white;">Contato</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
